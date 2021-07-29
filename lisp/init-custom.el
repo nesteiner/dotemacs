@@ -1,0 +1,65 @@
+(provide 'init-custom)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#373426" "#ECE9E0" "#D5D2C8" "#FFFFFD" "#FAF7EE" "#ECE9E0" "#FFFFF8" "#FFFFFD"])
+ '(custom-safe-themes
+   '("37144b437478e4c235824f0e94afa740ee2c7d16952e69ac3c5ed4352209eefb" "e074be1c799b509f52870ee596a5977b519f6d269455b84ed998666cf6fc802a" "01cf34eca93938925143f402c2e6141f03abb341f27d1c2dba3d50af9357ce70" "99ea831ca79a916f1bd789de366b639d09811501e8c092c85b2cb7d697777f93" "c4bdbbd52c8e07112d1bfd00fee22bf0f25e727e95623ecb20c4fa098b74c1bd" "2f1518e906a8b60fac943d02ad415f1d8b3933a5a7f75e307e6e9a26ef5bf570" "2cdc13ef8c76a22daa0f46370011f54e79bae00d5736340a5ddfe656a767fddf" "e6ff132edb1bfa0645e2ba032c44ce94a3bd3c15e3929cdf6c049802cf059a2a" "990e24b406787568c592db2b853aa65ecc2dcd08146c0d22293259d400174e37" "fb09acc5f09e521581487697c75b71414830b1b0a2405c16a9ece41b2ae64222" "dbade2e946597b9cda3e61978b5fcc14fa3afa2d3c4391d477bdaeff8f5638c5" "d4131a682c4436bb5a61103d9a850bf788cbf793f3fd8897de520d20583aeb58" "801a567c87755fe65d0484cb2bded31a4c5bb24fd1fe0ed11e6c02254017acb2" "dcdd1471fde79899ae47152d090e3551b889edf4b46f00df36d653adc2bf550d" "3cc2385c39257fed66238921602d8104d8fd6266ad88a006d0a4325336f5ee02" "c48551a5fb7b9fc019bf3f61ebf14cf7c9cdca79bcb2a4219195371c02268f11" "72a81c54c97b9e5efcc3ea214382615649ebb539cb4f2fe3a46cd12af72c7607" "9b59e147dbbde5e638ea1cde5ec0a358d5f269d27bd2b893a0947c4a867e14c1" "e9776d12e4ccb722a2a732c6e80423331bcb93f02e089ba2a4b02e85de1cf00e" "cdc2a7ba4ecf0910f13ba207cce7080b58d9ed2234032113b8846a4e44597e41" default))
+ '(fci-rule-color "#292617")
+ '(global-hl-todo-mode t)
+ '(ivy-mode t)
+ '(jdee-db-active-breakpoint-face-colors (cons "#10151C" "#5EC4FF"))
+ '(jdee-db-requested-breakpoint-face-colors (cons "#10151C" "#8BD49C"))
+ '(jdee-db-spec-breakpoint-face-colors (cons "#10151C" "#41505E"))
+ '(objed-cursor-color "#D95468")
+ '(org-agenda-files nil)
+ '(package-selected-packages
+   '(dashboard spaceline-all-the-icons fira-code-mode all-the-icons-ivy all-the-icons-ibuffer all-the-icons-ivy-rich rime all-the-icons-gnus yarn-mode liberime lsp-ui rainbow-delimiters-mode electric-pair-mode electric-pair lsp-dart projectile-mode dart-mode doom-modeline-mode org-download bison-mode lex org tide idea-darkula-theme datetime emacsql-mysql amx sql-indent conda lsp-julia ts-comint yasnippet lsp-pyright epc ox-pandoc pandoc-mode pandoc org-pdftools org-bullets org-edit-latex htmlize dap-mode lsp-ivy company-lsp doom-modeline modern-cpp-font-lock swiper ivy lsp-mode restart-emacs neotree all-the-icons-dired projectile unicode-fonts xr regex-tool evil-tutor switch-window evil fontawesome simple-modeline lsp-vue eglot-jl nox ess company-quickhelp ob-ipython prettier-js company-web iedit doom-themes web-mode tao-theme yaml-mode cmake-mode all-the-icons pip-requirements mongo flycheck-julia irony-eldoc flycheck-irony irony auto-complete vue-mode julia-snail auctex rainbow-delimiters dracula-theme sublime-themes jupyter php-mode pdf-tools ace-window grip-mode use-package flycheck company-irony company-irony-c-headers company elisp-benchmarks geiser gited color-theme-x python-django clojars nodejs-repl ssh leetcode hideshow-org python-environment color-theme-modern markdownfmt markdown-mode+ rust-playground julia-shell gnu-elpa-keyring-update markdown-preview-mode markdown-mode rust-mode clojure-mode-extra-font-locking cider julia-mode color-theme exec-path-from-shell clojure-quick-repls clojure-mode))
+ '(pdf-view-midnight-colors (cons "#A0B3C5" "#1D252C"))
+ '(rustic-ansi-faces
+   ["#1D252C" "#D95468" "#8BD49C" "#EBBF83" "#5EC4FF" "#E27E8D" "#70E1E8" "#A0B3C5"])
+ '(safe-local-variable-values
+   '((eval setq lsp-pyls-plugins-jedi-environment conda-env-current-path)
+     (conda-env-current-path . "/home/steiner/.anaconda/")))
+ '(send-mail-function 'mailclient-send-it)
+ '(tool-bar-mode nil)
+ '(vc-annotate-background "#201D0E")
+ '(vc-annotate-color-map
+   '((20 . "#737063")
+     (40 . "#B0ADA2")
+     (60 . "#B0ADA2")
+     (80 . "#D5D2C8")
+     (100 . "#D5D2C8")
+     (120 . "#ECE9E0")
+     (140 . "#ECE9E0")
+     (160 . "#FAF7EE")
+     (180 . "#FAF7EE")
+     (200 . "#FAF7EE")
+     (220 . "#FFFFF8")
+     (240 . "#FFFFF8")
+     (260 . "#FFFFF8")
+     (280 . "#FFFFFD")
+     (300 . "#FFFFFD")
+     (320 . "#FFFFFD")
+     (340 . "#FFFFFF")
+     (360 . "#FFFFFF")))
+ '(vc-annotate-very-old-color "#ECE9E0"))
+
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(default ((t (:background nil)))))
+
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:background nil)))))
