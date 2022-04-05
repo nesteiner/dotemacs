@@ -19,6 +19,8 @@
       '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
         ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
         ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
+	;; ("gnu"      . "http://elpa.gnu.org/packages/")))
+
 
 (package-initialize)
 
@@ -69,6 +71,3 @@
         (message "Indent buffer.")))))
 
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
-
-
-

@@ -1,15 +1,5 @@
-;; (use-package w3m
-;;   :load-path "/usr/share/emacs/site-lisp/w3m"
-;;   :config
-;;   (setq w3m-home-page "https://www.baidu.com"
-;; 	w3m-default-display-inline-images t
-;; 	w3m-default-toggle-inline-images t
-;; 	w3m-show-graphic-icons-in-header-line t
-;; 	w3m-show-graphic-icons-in-mode-line t
-;; 	w3m-use-cookies t
-;; 	w3m-command-arguments '("-cookie" "-F")))
-
 (use-package hl-todo
+  :defer t
   :load-path "~/workspace/scheme/hl-todo/"
   :config
   (setq hl-todo-keyword-faces
@@ -25,59 +15,37 @@
 	  ("DOING" . "cyan"))))
 
 
-;; (use-package eaf
-;;   :load-path "~/disk/disk1/emacs-application-framework"
-;;   :init
-;;   (use-package epc :defer t :ensure t)
-;;   (use-package ctable :defer t :ensure t)
-;;   (use-package deferred :defer t :ensure t)
-;;   (use-package s :defer t :ensure t)
-;;   :custom
-;;   (eaf-browser-continue-where-left-off t)
-;;   :config
-;;   (eaf-setq eaf-browser-enable-adblocker "true")
-;;   (eaf-bind-key scroll_up "C-n" eaf-pdf-viewer-keybinding)
-;;   (eaf-bind-key scroll_down "C-p" eaf-pdf-viewer-keybinding)
-;;   (eaf-bind-key take_photo "p" eaf-camera-keybinding)
-;;   (eaf-bind-key nil "M-q" eaf-browser-keybinding) ;; unbind, see more in the Wiki
-;;   (setq eaf-grip-token "16a15bb0d544413a4cf8978cf8aada5043f3f00d"
-;; 	eaf-proxy-type "http"
-;; 	eaf-proxy-host "127.0.0.1"
-;; 	eaf-proxy-port "7890"))
-
-
 ;; ivy and swiper
 (use-package ivy
   :ensure t
+  :defer t
   :diminish ivy-mode
   :hook (after-init . ivy-mode))
 
 (use-package swiper
   :ensure t
+  :defer t
   :bind ("C-s" . swiper))
 
 ;; MODULE vterm
 (use-package vterm
+  :defer t
   :config
-  (setq vterm-clear-scrollback t
-	vterm-max-scrollback 500))
+  (setq vterm-clear-scrollback-when-clearing t
+	vterm-max-scrollback 500)
+
+  (set-face-attribute 'term-color-black nil :foreground "white" :background "white"))
+  
+  ;; (set-face-attribute 'vterm-color-black nil :foreground "white" :background "black"))
+
 
 ;; MODULE Conda
 (use-package conda
+  :defer t
   :config
   (setq conda-anaconda-home "/home/steiner/.anaconda"
 	conda-env-home-directory "/home/steiner/.anaconda"))
 
-
-;; MODULE modeline
-(use-package doom-modeline
-  :ensure t
-  :config
-  (doom-modeline-mode t))
-;; (use-package simple-modeline
-;;   :ensure t
-;;   :config
-;;   (simple-modeline-mode 1))
 
 
 (provide 'init-extensions)

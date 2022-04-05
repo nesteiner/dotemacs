@@ -10,6 +10,7 @@
 	lsp-enable-symbol-highlighting t
 	lsp-restart 'auto-restart
 	lsp-file-watch-threshold 1000
+	lsp-typescript-tsdk "/usr/local/bin/ ./"
 	)
   (add-to-list 'lsp-file-watch-ignored-directories "node_modules/")
   :commands lsp)
@@ -32,5 +33,11 @@
 ;;   ((c++-mode python-mode clojure-mode) . dap-mode))
 
 
+(use-package lsp-julia
+  :after treemacs
+  :config
+  (setq lsp-julia-default-environment "~/.julia/environments/v1.6"))
+
+(use-package lsp-volar)
 
 (provide 'init-lsp)

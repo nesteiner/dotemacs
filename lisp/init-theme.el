@@ -1,0 +1,5 @@
+;; (load-theme 'fork-doom-one-light)
+;; (enable-theme 'fork-doom-one-light)
+(load-theme 'base16-monokai t)
+(enable-theme 'base16-monokai)
+(provide 'init-theme)
