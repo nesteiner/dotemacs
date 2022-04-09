@@ -4,13 +4,12 @@
   :config
   (setq lsp-enable-snippet nil
 	lsp-eslint-enable nil
-	lsp-idle-delay 0.500
+	lsp-idle-delay 0.8
 	;; STUB add some config, risky
 	lsp-log-io nil
 	lsp-enable-symbol-highlighting t
 	lsp-restart 'auto-restart
 	lsp-file-watch-threshold 1000
-	lsp-typescript-tsdk "/usr/local/bin/ ./"
 	)
   (add-to-list 'lsp-file-watch-ignored-directories "node_modules/")
   :commands lsp)

@@ -12,8 +12,8 @@
 
 (defun my-cleanup-gc ()
   "Clean up gc."
-  (setq gc-cons-threshold  67108864) ; 64M 671
-  (setq gc-cons-percentage 0.3) ; original value
+  (setq gc-cons-threshold  (* 1024 200)) ; 200MB
+  (setq gc-cons-percentage 0.5) ; 0.5s
   (garbage-collect))
 
 (run-with-idle-timer 4 nil #'my-cleanup-gc)
