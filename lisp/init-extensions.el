@@ -1,6 +1,5 @@
 (use-package hl-todo
   :defer t
-  :load-path "~/workspace/scheme/hl-todo/"
   :config
   (setq hl-todo-keyword-faces
 	'(("TODO"   . "#FF0000")
@@ -12,7 +11,8 @@
 	  ("MODULE" . "#7fff00")
 	  ("ATTENTION" . "#00ffff")
 	  ("DONE" . "#7fff00")
-	  ("DOING" . "cyan"))))
+	  ("DOING" . "cyan")))
+  (global-hl-todo-mode))
 
 
 ;; ivy and swiper

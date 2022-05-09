@@ -6,7 +6,7 @@
 	   ("C-S-p" . org-download-clipboard))
     
     :config
-    (setq-default org-download-image-dir "~/ChiniBlogs/src/images/")
+    (setq-default org-download-image-dir "~/workspace/ChiniBlogs/src/images/")
     (add-hook 'dired-mode-hook 'org-download-enable))
 
   (use-package org-bullets
@@ -31,9 +31,9 @@
 	org-export-preserve-breaks t
 	org-publish-project-alist
 	'(("blog-notes"
-	   :base-directory "~/ChiniBlogs/src/"
+	   :base-directory "~/workspace/ChiniBlogs/src/"
 	   :base-extension "org"
-	   :publishing-directory "~/ChiniBlogs/html/"
+	   :publishing-directory "~/workspace/ChiniBlogs/html/"
 	   :publishing-function org-html-publish-to-html
 	   :headline-levels 5
 	   :section-numbers 4
@@ -43,22 +43,10 @@
 	   :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/org.css\"/>"
 	   )
 	  ("blog-static"
-	   :base-directory "~/ChiniBlogs/src/images/"
+	   :base-directory "~/workspace/ChiniBlogs/src/images/"
 	   :base-extension "css\\|js\\|png\\|jpg\\|gif"
-	   :publishing-directory "~/ChiniBlogs/html/images/"
+	   :publishing-directory "~/workspace/ChiniBlogs/html/images/"
 	   :publishing-function org-publish-attachment)
-
-	  ("docx"
-	   :base-directory "."
-	   :base-extension "org"
-	   :publishing-directory "~/ChiniBlogs/docx"
-	   :publishing-function org-pandoc-export-to-docx
-	   :headline-levels 5
-	   :section-numbers 2
-	   :auto-preamble t
-	   :author "Steiner"
-	   :email "steiner3044@163.com"
-	   :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"/home/steiner/ChiniBlogs/html/css/org.css\"/>")
 	  )))
 
 
