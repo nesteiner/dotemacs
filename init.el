@@ -19,9 +19,9 @@
 (run-with-idle-timer 4 nil #'my-cleanup-gc)
 
 (set-face-attribute 'default nil
-		    :family "Source Code Pro"
+		    :family "Dejavu Sans Mono"
 		    :slant 'normal
-		    :height 158
+		    :height 155
 		    :width 'normal
 		    :weight 'normal)
 
