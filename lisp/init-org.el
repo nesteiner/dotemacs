@@ -6,7 +6,7 @@
 	   ("C-S-p" . org-download-clipboard))
     
     :config
-    (setq-default org-download-image-dir "~/workspace/ChiniBlogs/src/images/")
+    (setq-default org-download-image-dir "./images/")
     (add-hook 'dired-mode-hook 'org-download-enable))
 
   (use-package org-bullets

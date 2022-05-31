@@ -12,7 +12,7 @@
 	  ("ATTENTION" . "#00ffff")
 	  ("DONE" . "#7fff00")
 	  ("DOING" . "cyan")))
-  (global-hl-todo-mode))
+  (global-hl-todo-mode 1))
 
 
 ;; ivy and swiper

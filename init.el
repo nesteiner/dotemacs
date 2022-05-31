@@ -51,7 +51,7 @@
 (require 'init-tags)
 (require 'init-hlline)
 
-(require 'init-company)
+;; (require 'init-company)
 (require 'init-typescript)
 (require 'init-yasnippet)
 (require 'init-rime)
