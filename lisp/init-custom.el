@@ -6,7 +6,7 @@
  '(custom-safe-themes
    '("66bdbe1c7016edfa0db7efd03bb09f9ded573ed392722fb099f6ac6c6aefce32" default))
  '(package-selected-packages
-   '(org-pomodoro doom-themes flycheck-rust rust-mode lsp-julia yaml-mode vterm doom-modeline all-the-icons org-bullets org-download treemacs dashboard flycheck base16-theme restart-emacs rime company counsel-etags rainbow-delimiters lsp-ivy projectile which-key use-package)))
+   '(cmake-mode doom-themes flycheck-rust rust-mode lsp-julia yaml-mode vterm doom-modeline all-the-icons org-bullets org-download treemacs dashboard flycheck base16-theme restart-emacs rime company counsel-etags rainbow-delimiters lsp-ivy projectile which-key use-package)))
 
 ;; (custom-set-faces
 ;;  ;; custom-set-faces was added by Custom.
