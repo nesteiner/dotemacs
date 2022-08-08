@@ -1,5 +1,4 @@
 (use-package hl-todo
-  :defer t
   :config
   (setq hl-todo-keyword-faces
 	'(("TODO"   . "#FF0000")
@@ -29,12 +28,14 @@
 
 ;; MODULE vterm
 (use-package vterm
-  :defer t
   :config
   (setq vterm-clear-scrollback-when-clearing t
 	vterm-max-scrollback 500)
 
-  (set-face-attribute 'term-color-black nil :foreground "white" :background "white"))
+  (set-face-attribute 'term-color-black nil :foreground "black" :background "#79a0f5")
+  ;; (set-face-attribute 'term-color-black nil :foreground "black" :background "black")
+  ;; (set-face-attribute 'vterm-color-black nil :foreground "black" :background "black")
+  )
   
   ;; (set-face-attribute 'vterm-color-black nil :foreground "white" :background "black"))
 
