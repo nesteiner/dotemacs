@@ -33,6 +33,7 @@
 	vterm-max-scrollback 500)
 
   (set-face-attribute 'term-color-black nil :foreground "black" :background "#79a0f5")
+  (set-face-attribute 'vterm-color-black nil :foreground "white" :background "white")
   ;; (set-face-attribute 'term-color-black nil :foreground "black" :background "black")
   ;; (set-face-attribute 'vterm-color-black nil :foreground "black" :background "black")
   )
