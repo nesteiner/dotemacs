@@ -6,7 +6,7 @@
 	julia-indent-offset 2)
 
   (setenv "JULIA_PKG_SERVER" "https://mirrors.tuna.tsinghua.edu.cn/julia")
-  (setq-default julia-snail-extra-args "--sysimage /home/steiner/.julia/images/julia-dev.so")
+  (setq-default julia-snail-extra-args "--sysimage /home/steiner/.julia/images/julia-dev.so --threads 5")
   (setq-default	julia-snail-executable "/home/steiner/.local/bin/julia")
   (setq lsp-julia-flags `("-J /home/steiner/.julia/images/language-server.so"))
   (use-package lsp-julia

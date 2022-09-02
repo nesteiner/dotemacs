@@ -102,6 +102,7 @@
   :hook (after-init . doom-modeline-mode)
   :config
   (setq doom-modeline-height 40))
+  
 ;; (add-to-list 'load-path (expand-file-name "~/.emacs.d/elpa/awesome-tray"))
 ;; (require 'awesome-tray)
 ;; (awesome-tray-mode 1)
